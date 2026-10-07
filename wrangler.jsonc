@@ -1,0 +1,11 @@
+// Deploy no Cloudflare Workers como site estático.
+// O build (`npm run build`) gera dist/; o Worker só serve esses arquivos.
+// Ter este arquivo evita que o wrangler tente configurar o projeto sozinho
+// lendo o vite.config.js.
+{
+  "name": "landingpage-criativart",
+  "compatibility_date": "2026-10-07",
+  "assets": {
+    "directory": "./dist"
+  }
+}
